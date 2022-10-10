@@ -1,5 +1,4 @@
 INSERT INTO genres(name) 
-VALUES ('Rock'), ('POP'), ('Jazz'), ('Electro'), ('Hip-Hop')
 ON CONFLICT (name)
 DO UPDATE SET name = Excluded.name;
 
@@ -20,7 +19,7 @@ VALUES
 ('Mother', '1', '240'), ('Father', '2', '180'), ('Brother', '3', '180'), ('Sister', '4', '180'), ('Mister', '5', '180'), 
 ('Roadster', '6', '180'), ('Poster', '7', '180'), ('Chester', '8', '180'), ('Suffer', '1', '240'), ('Maffin', '2', '180'), 
 ('Griffin', '3', '240'), ('Sunrise', '4', '180'), ('My Goal', '5', '240'), ('My Destiny', '6', '180'), ('Focus', '7', '180'), 
-('Vegans', '8', '180')
+('Vegans', '8', '180'), ('Im not in collection', '1', '180')
 ON CONFLICT (name)
 DO UPDATE SET name = Excluded.name;
 
