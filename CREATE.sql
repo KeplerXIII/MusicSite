@@ -1,5 +1,3 @@
---DROP TABLE IF EXISTS Genres, Artists, Albums, Collections, Tracks, ArtistGenre, ArtistAlbum, CollectionTrack;
-
 CREATE TABLE IF NOT EXISTS Genres (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(60) UNIQUE NOT NULL
