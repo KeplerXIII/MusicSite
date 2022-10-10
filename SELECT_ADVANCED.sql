@@ -69,7 +69,7 @@ HAVING COUNT(tr.album_id) =
 SELECT COUNT(tr.album_id) FROM music.tracks tr
 JOIN music.albums al ON al.id = tr.album_id
 GROUP BY al.name
-order by count limit 1
+ORDER BY count LIMIT 1
 );
 
 
